@@ -100,7 +100,7 @@ const updateEmployee = async () => {
         if (err) throw err;
         inquirer
         .prompt({
-            name; "employeeSelect",
+            name: "employeeSelect",
             type: "rawlist",
             message: "Which employee would you like to update?",
             choices: [
@@ -113,7 +113,7 @@ const updateEmployee = async () => {
         })
         .then(async data => {
             connection.query = await util.promisify(connection.query);
-            
+
         })
     })
 
