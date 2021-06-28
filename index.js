@@ -141,7 +141,7 @@ const addRole = () => {
 }
 
 const viewEmployees = () => {
-    let query = 'SELECT first_name, last_name, id, manager_id FROM employees ORDER BY last_name';
+    let query = 'SELECT first_name, last_name, id, role_id, manager_id FROM employees ORDER BY last_name';
     connection.query(query, function (err, res){
         if (err) throw err;
         console.table('All Employees:', res);
@@ -199,6 +199,36 @@ const viewRoles = () => {
             } else {
                 connection.end();
             }
+        })
+    })
+};
+
+const updateEmployee = () => {
+    connection.query('SELECT * FROM roles', function (err, res) {
+        inquirer.prompt([
+            {
+                name: 'employeeID',
+                type: 'input',
+                message: 'What is the employee id of the employee you would like to update?',
+            },
+            {
+                name: "updatedRole",
+                type: "list",
+                message: "What is the new role for this employee?",
+                choices: function () {
+                    if (err) throw err
+                    return res.map(role => ({ name: role.title, value: role.id }))
+                }
+
+            }
+        ]).then(function (answer) {
+            console.log(answer.updatedRole)
+            connection.query('UPDATE employees SET ? WHERE ?', [{ role_id: answer.updatedRole }, { id: answer.employeeID }],
+                function (err) {
+                    if (err) throw err
+                    start();
+                }
+            )
         })
     })
 };

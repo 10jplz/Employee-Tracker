@@ -26,3 +26,13 @@ CREATE TABLE employees(
   PRIMARY KEY (id),
   FOREIGN KEY (role_id) REFERENCES roles(id)
 );
+
+INSERT INTO departments (department_name)
+VALUES ("Plumbing");
+
+INSERT INTO departments (department_name)
+VALUES ("Electrical");
+
+INSERT INTO departments (department_name)
+VALUES ("Flooring");
+
