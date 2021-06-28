@@ -4,7 +4,11 @@
   # Employee-Tracker
   
   # Demo 
+  
     ![demo clip](https://github.com/10jplz/Employee-Tracker/blob/main/demo1.gif)
+    
+      ![demo clip](https://github.com/10jplz/Employee-Tracker/blob/main/Demo1.gif)
+
 
 
   ## Description 
