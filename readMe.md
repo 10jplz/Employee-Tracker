@@ -2,6 +2,10 @@
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg)]
   ----
   # Employee-Tracker
+  
+  # Demo 
+    ![demo clip](https://github.com/10jplz/Employee-Tracker/blob/main/demo1.gif)
+
 
   ## Description 
 
