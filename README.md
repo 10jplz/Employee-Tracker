@@ -22,8 +22,8 @@
   * [Usage](#usage)
   * [Contribution](#contribution)
   * [License](#license)
-  * [Github Repository] (#repo)
-  * [Deployed App] (#liveapp)
+  * [Github Repository](#repo)
+  * [Deployed App](#liveapp)
 
   ## Installation 
 
