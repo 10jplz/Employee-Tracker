@@ -5,9 +5,10 @@
   
   # Demo 
   
-    ![demo clip](https://github.com/10jplz/Employee-Tracker/blob/main/demo1.gif)
-    
-      ![demo clip](https://github.com/10jplz/Employee-Tracker/blob/main/Demo1.gif)
+      ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+      
+
+
 
 
 
